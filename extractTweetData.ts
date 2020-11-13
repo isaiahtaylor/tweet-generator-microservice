@@ -37,7 +37,8 @@ export default async (req: NowRequest, res: NowResponse) => {
     retweets: tweetData.retweets || 0,
     likes: tweetData.likes || 0,
     replies: tweetData.replies || 0,
-    avatar: tweetData.avatar || 'https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png'
+    avatar: tweetData.avatar || 'https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png',
+    dispute: tweetData.dispute,
   }
 
   // Check all mandatory parameters were set
